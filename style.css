@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;700&display=swap');
+
+body {
+    margin: 0 25%;
+    font-family: 'Maven Pro';
+}
+section {
+    margin: 50px 0;
+}
+p {
+    margin: 20px 0;
+    font-size: 14pt;
+}
+a {
+    color: rgb(53, 143, 227);
+    text-decoration: none;
+}
+figure {
+    display: table;
+    margin: 0;
+}
+figcaption {
+    display: table-caption;
+    caption-side: bottom;
+
+}
+img {
+    width: 90%;
+}
+li {
+    font-weight: 800;
+}

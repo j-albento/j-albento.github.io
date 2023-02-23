@@ -1,23 +1,199 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/style.css" type="text/css">
-    <title>Emerging Trends | Blog</title>
-</head>
-<body>
-    <header>
-        <h1>SAIT ITSD Emerging Trends</h1>
-        <h3>Blog 1</h3>
-    </header>
-    <article>
-        <h2>Title</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae veniam id cum, temporibus magnam ipsum, explicabo nihil asperiores nisi cumque dolorem fuga repellat quos veritatis doloribus rerum a distinctio vero.</p>
-    </article>
-    <footer>
-        <h2>Site created by Joanna Albento</h2>
-    </footer>
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./style.css" type="text/css" />
+		<title>Emerging Trends | Blog 1</title>
+	</head>
+	<body>
+		<header>
+			<h1>What I Learned About C# in 2 Weeks</h1>
+			<h4>By Joanna A | Feb 18, 2023</h4>
+		</header>
+		<article>
+			<section id="intro">
+				<p>
+					In the last 2 weeks I've been rigorously learning Microsoft's
+					programming language, C#; typing away, running two hours of sleep and
+					not seeing the light of day. Well, not really, I've been watching
+					videos and reading up on websites about C# and nodding my head
+					pretending like I know what's going on. But, I have learned quite a
+					lot in those total of 5 hours of reading and nodding.
+				</p>
+				<p>
+					And you might be thinking, why C#? I collect programming languages
+					like inifinity stones and enjoy the feeling of knowing them even if I
+					only know 20% of each language I pick up.
+				</p>
+			</section>
+			<section id="about">
+				<h3>Here's what I learned in the first few minutes:</h3>
+				<p>Wait... Isn't this just a copy of Java?</p>
+				<p>
+					Upon looking at the syntax, I found that C# is actually not too far
+					from Java at all. Surprisingly C# doesn't quite fit in well with the
+					other C languages and this is because <i>it was made by Microsoft</i>.
+				</p>
+				<div>
+					<div>
+						<figure>
+							<img src="./assets/images/helloworld_cs.png" />
+							<figcaption>HelloWorld program in C#</figcaption>
+						</figure>
+					</div>
+					<div>
+						<figure>
+							<img src="./assets/images/helloworld_java.png" />
+							<figcaption>HelloWorld program in Java</figcaption>
+						</figure>
+					</div>
+				</div>
+				<p>
+					Jokes aside, C# is a more high-level language in comparison to C or
+					C++, which makes C# a lot more programmer-friendly, in the sense that,
+					the language pretty much does all the hard work for you thus,
+					providing first-time programmers a better experience learning. Coming
+					from a background in Java, I can say for myself that learning C# was
+					definitely easier and faster than if I were to learn something like, C
+					or C++.
+				</p>
+				
+				<h3>Game Development Using C#</h3>
+				<p>
+					Just like Java, it allows an object-oriented style of programming.
+					This is useful if you want to create web, desktop, or even mobile
+					applications. C# is also great if you're learning game development for
+					the first time. Unity, a game engine software that allows for
+					developers to program 2D/3D games, uses C# but with a little added
+					<i>spice</i>. Unity uses C# in its own way that provides the
+					developers a way to do all types of game development things such as
+					implementing physics, input handling, game object handling, etc.
+					What's great about this is if you already know Unity, you can very
+					much learn C# without the Unity part.
+				</p>
+			</section>
+			<section id="setup">
+				<h3>Setting up the environment</h3>
+				<p>
+					There are many ways to setting up your environment in order to program
+					with C#. There are many IDEs for C# to choose from, but the easiest
+					for me was using the source-code editor Visual Studio Code. You could
+					also use Visual Studio IDE, but for my own preference, I went with VS
+					Code when setting up my environment.
+				</p>
+
+				<h4>Setting up C# in VS Code was simple. First things first:</h4>
+				<ol>
+					<li>
+						We need the thing that C# actually needs to run:
+						<a href="https://dotnet.microsoft.com/en-us/download">.NET</a>
+					</li>
+					<p>
+						This can be found somewhere on Microsoft's dotnet website that will
+						give you different versions of .NET, as well as the recommended
+						version.
+					</p>
+					<li>C# extension on VS Code</li>
+					<p>
+						By default, VS Code doesn't have built-in tools to support
+						programming in languages like C#, but luckily that isn't an issue.
+						VS Code has a feature to install extensions. Extensions are a way to
+						acquire additional features that can help with coding even if it's
+						just making your code look pretty!
+					</p>
+					<p>
+						On the Extensions tab or by pressing CTRL + SHIFT + X, search for
+						the 'C#' extension made by Microsoft. This extension will give you
+						all the tools you need to code, debug, compile and execute C# in VS
+						Code!
+					</p>
+				</ol>
+			</section>
+			<section id="project-creation">
+				<h3>Creating your first C# application</h3>
+				<p>
+					Create a new C# application by opening VS Code's terminal (CTRL + `).
+					Before you create a new application, make sure you're in the preferred
+					directory of where you want your application to be stored. This is
+					done by a simple cd command followed by the path of your preferred
+					directory.
+				</p>
+
+				<p>Next, in the terminal, create your application:</p>
+				<div>
+					<figure>
+						<img src="./assets/images/project_creation.png" alt="" />
+						<figcaption>'NewApp' can be replaced with whatever project name you choose.</figcaption>
+					</figure>
+				</div>
+				
+				<p>
+					Great! Now you've created a project folder the project name 'NewApp'
+					or whatever you decided to call it. To open and code in your project,
+					change to that project folder
+				</p>
+				<div>
+					<figure>
+						<img src="./assets/images/creation_success.png" alt="" />
+						<figcaption>
+							Command 'code .' will open a new VS Code window with your project in
+							it. Alternatively, you can click on the 'Open folder' button and
+							manually navigate to that project.
+						</figcaption>
+					</figure>
+				</div>
+				
+				<p>
+					In this newly created project folder, you'll see a Program.cs file.
+					This file is provided by default upon creating a new C# project.
+					You're free to remove this file and create a new one, or rename it
+					whatever you want.
+				</p>
+				<div>
+					<figure>
+						<img src="./assets/images/program.png" alt="" />
+					</figure>
+				</div>
+				
+				<p>
+					In Program.cs, some code that can be displayed on the console is
+					already written for you! To run it, go into terminal (CTRL + `) and
+					execute this command: <b>dotnet run</b>
+				</p>
+				<div>
+					<figure>
+						<img src="./assets/images/dotnet_run.png" alt="" />
+						<figcaption>
+							In the terminal, "Hello World" should be displayed.
+						</figcaption>
+					</figure>
+				</div>
+				<p>
+					When writing more complex code, you want to make sure that you're
+					writing the right code. Using the 'dotnet build' command will allow
+					you to compile your code.
+				</p>
+				<div>
+					<figure>
+						<img src="./assets/images/dotnet_build.png" alt="" />
+					</figure>
+				</div>
+			</section>
+			<section id="conclusion">
+				<h3>Conclusion</h3>
+				<p>
+					C# is an object-oriented programming language that is developed and
+					maintained by Microsoft. It runs on the .NET framework. It is a
+					language that is easy to learn for beginners and can easily be picked
+					up by experienced programmers that want to quickly learn a new
+					languge. C# can be used to build a wide variety of applications from
+					web to mobile, and can be used in game development. The best part of
+					it all is that it is easy to set up so you can be well on your way in
+					your programming journey!
+				</p>
+			</section>
+		</article>
+	</body>
 </html>
