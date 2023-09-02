@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.81d0dad8.css",
+    "main.js": "/static/js/main.a7ffaf45.js",
+    "static/media/maven-pro-latin-wght-normal.woff2": "/static/media/maven-pro-latin-wght-normal.9e81ed98dee7245a3c10.woff2",
+    "static/media/maven-pro-latin-ext-wght-normal.woff2": "/static/media/maven-pro-latin-ext-wght-normal.83003bda2c1b4b7548cb.woff2",
+    "static/media/maven-pro-vietnamese-wght-normal.woff2": "/static/media/maven-pro-vietnamese-wght-normal.e695329c2eb833dbda60.woff2",
+    "index.html": "/index.html",
+    "main.81d0dad8.css.map": "/static/css/main.81d0dad8.css.map",
+    "main.a7ffaf45.js.map": "/static/js/main.a7ffaf45.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.81d0dad8.css",
+    "static/js/main.a7ffaf45.js"
+  ]
+}
