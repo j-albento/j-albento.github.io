@@ -1,13 +1,15 @@
-export const NAV_LINKS = ["About", "Work", "Contact"];
+export const NAV_LINKS = ["About", "Projects", "Contact"];
 
 export const STACK = [
-    "React",
-    "Next.js",
-    "TypeScript",
-    "Node.js",
-    "PostgreSQL",
+    "Java",
     "Python",
-    "Docker",
+    "C#",
+    "JavaScript",
+    "TypeScript",
+    "React",
+    "Node.js",
+    "Express.js",
+    "Postman",
     "Git",
 ];
 

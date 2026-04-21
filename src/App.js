@@ -111,7 +111,7 @@ function App() {
                     </FadeSection>
 
                     <FadeSection id="work">
-                        <div style={s.sectionLabel}>Selected Work</div>
+                        <div style={s.sectionLabel}>Projects</div>
                         <div>
                             {PROJECTS.map((p, i) => (
                                 <ProjectRow
