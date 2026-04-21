@@ -19,9 +19,7 @@ function App() {
             <div style={s.wrap}>
                 <div style={s.container}>
                     <nav style={s.nav}>
-                        <a href="#" style={s.navName}>
-                            Joanna Albento
-                        </a>
+                        <a style={s.navName}>Joanna Albento</a>
                         <ul style={s.navList}>
                             {NAV_LINKS.map((l) => (
                                 <NavLink key={l} href={`#${l.toLowerCase()}`}>
