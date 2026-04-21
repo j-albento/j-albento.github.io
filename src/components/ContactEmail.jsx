@@ -4,7 +4,7 @@ export default function ContactEmail() {
     const [hov, setHov] = useState(false);
     return (
         <a
-            href="mailto:hello@yourname.dev"
+            href="mailto:joannamarie.albento@gmail.com"
             onMouseEnter={() => setHov(true)}
             onMouseLeave={() => setHov(false)}
             style={{
@@ -19,7 +19,7 @@ export default function ContactEmail() {
                 transition: "border-color 0.25s ease",
             }}
         >
-            hello@yourname.dev
+            joannamarie.albento@gmail.com
         </a>
     );
 }

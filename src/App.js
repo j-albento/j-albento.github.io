@@ -32,12 +32,12 @@ function App() {
 
                     <div style={s.socialRow}>
                         <SocialLink
-                            href="#"
+                            href="https://github.com/j-albento"
                             icon={<IconGitHub />}
                             label="GitHub"
                         />
                         <SocialLink
-                            href="#"
+                            href="https://www.linkedin.com/in/joanna-albento/"
                             icon={<IconLinkedIn />}
                             label="LinkedIn"
                         />
@@ -48,9 +48,9 @@ function App() {
                             Full-Stack Developer · Software Development Student
                         </div>
                         <h1 className="hero-headline" style={s.headline}>
-                            Building things
+                            Building solutions
                             <br />
-                            for the <em style={s.headlineEm}>web.</em>
+                            for the <em style={s.headlineEm}>future.</em>
                         </h1>
                         <p className="hero-bio" style={s.bio}>
                             Software development student with a love for
@@ -127,17 +127,17 @@ function App() {
                         <div style={s.sectionLabel}>Contact</div>
                         <p style={s.contactSub}>
                             Open to internships, co-ops, and interesting
-                            conversations. Don't hesitate to reach out.
+                            conversations. Please don't hesitate to reach out!
                         </p>
                         <ContactEmail />
                         <div style={s.socialRow}>
                             <SocialLink
-                                href="#"
+                                href="https://github.com/j-albento"
                                 icon={<IconGitHub />}
                                 label="GitHub"
                             />
                             <SocialLink
-                                href="#"
+                                href="https://www.linkedin.com/in/joanna-albento/"
                                 icon={<IconLinkedIn />}
                                 label="LinkedIn"
                             />
