@@ -19,7 +19,7 @@ export default function ContactEmail() {
                 transition: "border-color 0.25s ease",
             }}
         >
-            joannamarie.albento@gmail.com
+            my email
         </a>
     );
 }
