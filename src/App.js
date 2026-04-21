@@ -1,72 +1,166 @@
 import React from "react";
 import "./App.css";
-import "@fontsource-variable/maven-pro";
-import Navbar from "./components/Navbar";
-import ProjectCard from "./components/ProjectCard";
-import Title from "./components/Title";
+import { FONT_IMPORT, s } from "./styles";
+import { NAV_LINKS, STACK, PROJECTS } from "./data";
+import NavLink from "./components/NavLink";
+import SocialLink from "./components/SocialLink";
+import { IconGitHub, IconX, IconLinkedIn } from "./assets/icons";
+import LinkArrow from "./components/LinkArrow";
+import LinkPlain from "./components/LinkPlain";
+import FadeSection from "./components/FadeSection";
+import StackTag from "./components/StackTag";
+import ContactEmail from "./components/ContactEmail";
+import ProjectRow from "./components/ProjectRow";
 
 function App() {
-	return (
-		<div className="App">
-			<Navbar />
-			<section id="home">
-				<h1>
-					<Title />
-				</h1>
-			</section>
-			<section id="about">
-				<div className="section-title">BACKGROUND</div>
-				<div className="section-content">
-					<p>
-						Hello! My name is Joanna Albento. I'm a recent graduate from the{" "}
-						<span className="link">
-							<a href="https://www.sait.ca/">
-								Southern Alberta Institute of Technology
-							</a>
-						</span>{" "}
-						where I studied software development and continue my passion for
-						programming every day.
-					</p>
-					<p style={{ paddingTop: 20 }}>
-						When I'm not at my computer, I'm usually being haunted by bugs in a
-						project so I take my stress and frustrations out by picking up
-						weights and putting them back down, hanging out with my dogs, or
-						casting spells on Wizard101.
-					</p>
-				</div>
-			</section>
-			<section id="projects">
-				<div className="section-title">PROJECTS</div>
+    return (
+        <div className="App">
+            <style>{FONT_IMPORT}</style>
+            <div style={s.wrap}>
+                <div style={s.container}>
+                    <nav style={s.nav}>
+                        <a href="#" style={s.navName}>
+                            Joanna Albento
+                        </a>
+                        <ul style={s.navList}>
+                            {NAV_LINKS.map((l) => (
+                                <NavLink key={l} href={`#${l.toLowerCase()}`}>
+                                    {l.toLowerCase()}
+                                </NavLink>
+                            ))}
+                        </ul>
+                    </nav>
 
-				<div className="section-content">
-					<ProjectCard
-						title={"Appointment Scheduler"}
-						description={
-							"A Capstone project carefully designed and developed with other student developers for a local massage therapy business based in Calgary, AB."
-						}
-						link={""}
-						languages={["Java", "MySQL", "HTML/CSS", "JavaScript"]}
-					/>
-					<ProjectCard
-						title={"Todo List"}
-						description={
-							"A redesigned and refactored version of a previous todo list project."
-						}
-						link={"https://github.com/j-albento/todo"}
-						languages={["React", "HTML/CSS"]}
-					/>
-					<ProjectCard
-						title={"Password Generator"}
-						description={
-							"My take on a password generator with design inspired by various applications."
-						}
-						link={"https://github.com/j-albento/password-generator"}
-						languages={["React", "HTML/CSS", "Material UI"]}
-					/>
-				</div>
-			</section>
-		</div>
-	);
+                    <div style={s.socialRow}>
+                        <SocialLink
+                            href="#"
+                            icon={<IconGitHub />}
+                            label="GitHub"
+                        />
+                        <SocialLink
+                            href="#"
+                            icon={<IconLinkedIn />}
+                            label="LinkedIn"
+                        />
+                        <SocialLink
+                            href="#"
+                            icon={<IconX />}
+                            label="X / Twitter"
+                        />
+                    </div>
+
+                    <div style={s.hero}>
+                        <div className="hero-eyebrow" style={s.eyebrow}>
+                            Full-Stack Developer · Software Development Student
+                        </div>
+                        <h1 className="hero-headline" style={s.headline}>
+                            Building things
+                            <br />
+                            for the <em style={s.headlineEm}>web.</em>
+                        </h1>
+                        <p className="hero-bio" style={s.bio}>
+                            Software development student with a love for
+                            building{" "}
+                            <strong
+                                style={{ color: "#1a1a18", fontWeight: 500 }}
+                            >
+                                full-stack web applications
+                            </strong>{" "}
+                            — from clean UIs to reliable backends. I care about
+                            writing code that's readable, scalable, and ships on
+                            time.
+                        </p>
+                        <div className="hero-actions" style={s.actions}>
+                            <LinkArrow href="#work">See my work →</LinkArrow>
+                            <LinkPlain href="mailto:joannamarie.albento@gmail.com">
+                                joannamarie.albento@gmail.com
+                            </LinkPlain>
+                        </div>
+                    </div>
+
+                    <FadeSection id="about">
+                        <div style={s.sectionLabel}>About</div>
+                        <div style={s.aboutText}>
+                            <p>
+                                Hey, I'm{" "}
+                                <strong
+                                    style={{
+                                        color: "#1a1a18",
+                                        fontWeight: 500,
+                                    }}
+                                >
+                                    Your Name
+                                </strong>
+                                . I'm a software development student with a
+                                passion for writing code and solving problems
+                                that don't exist yet.
+                            </p>
+                            <p style={{ marginTop: 16 }}>
+                                Currently looking for{" "}
+                                <strong
+                                    style={{
+                                        color: "#1a1a18",
+                                        fontWeight: 500,
+                                    }}
+                                >
+                                    internships and co-op placements
+                                </strong>{" "}
+                                where I can contribute to a real product and
+                                keep growing as a developer.
+                            </p>
+                        </div>
+                        <div style={s.stackList}>
+                            {STACK.map((t) => (
+                                <StackTag key={t} label={t} />
+                            ))}
+                        </div>
+                    </FadeSection>
+
+                    <FadeSection id="work">
+                        <div style={s.sectionLabel}>Selected Work</div>
+                        <div>
+                            {PROJECTS.map((p, i) => (
+                                <ProjectRow
+                                    key={p.num}
+                                    project={p}
+                                    first={i === 0}
+                                />
+                            ))}
+                        </div>
+                    </FadeSection>
+
+                    <FadeSection id="contact">
+                        <div style={s.sectionLabel}>Contact</div>
+                        <p style={s.contactSub}>
+                            Open to internships, co-ops, and interesting
+                            conversations. Don't hesitate to reach out.
+                        </p>
+                        <ContactEmail />
+                        <div style={s.socialRow}>
+                            <SocialLink
+                                href="#"
+                                icon={<IconGitHub />}
+                                label="GitHub"
+                            />
+                            <SocialLink
+                                href="#"
+                                icon={<IconLinkedIn />}
+                                label="LinkedIn"
+                            />
+                        </div>
+                    </FadeSection>
+
+                    <footer style={s.footer}>
+                        <span style={s.footerCopy}>© 2026 Joanna Albento</span>
+                        <span style={s.footerStatus}>
+                            <span style={s.statusDot} />
+                            Available for work
+                        </span>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    );
 }
 
 export default App;
