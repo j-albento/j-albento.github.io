@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { IconGitHub, IconExternal } from "./assets/icons";
+import { IconGitHub, IconExternal } from "../assets/icons";
 import { s } from "../assets/styles";
 import PTag from "./PTag";
 import IconLink from "./IconLink";

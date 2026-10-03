@@ -1,6 +1,5 @@
 import React from "react";
-import "./App.css";
-import { FONT_IMPORT, s } from "./styles";
+import { FONT_IMPORT, s } from "./assets/styles";
 import { NAV_LINKS, STACK, PROJECTS } from "./data";
 import NavLink from "./components/NavLink";
 import SocialLink from "./components/SocialLink";
@@ -19,7 +18,9 @@ function App() {
             <div style={s.wrap}>
                 <div style={s.container}>
                     <nav style={s.nav}>
-                        <a style={s.navName}>Joanna Albento</a>
+                        <a href="#" style={s.navName}>
+                            Joanna Albento
+                        </a>
                         <ul style={s.navList}>
                             {NAV_LINKS.map((l) => (
                                 <NavLink key={l} href={`#${l.toLowerCase()}`}>
@@ -31,19 +32,14 @@ function App() {
 
                     <div style={s.socialRow}>
                         <SocialLink
-                            href="#"
+                            href="https://github.com/j-albento"
                             icon={<IconGitHub />}
                             label="GitHub"
                         />
                         <SocialLink
-                            href="#"
+                            href="https://www.linkedin.com/in/joanna-albento/"
                             icon={<IconLinkedIn />}
                             label="LinkedIn"
-                        />
-                        <SocialLink
-                            href="#"
-                            icon={<IconX />}
-                            label="X / Twitter"
                         />
                     </div>
 
@@ -52,9 +48,9 @@ function App() {
                             Full-Stack Developer · Software Development Student
                         </div>
                         <h1 className="hero-headline" style={s.headline}>
-                            Building things
+                            Building solutions
                             <br />
-                            for the <em style={s.headlineEm}>web.</em>
+                            for the <em style={s.headlineEm}>future.</em>
                         </h1>
                         <p className="hero-bio" style={s.bio}>
                             Software development student with a love for
@@ -87,9 +83,9 @@ function App() {
                                         fontWeight: 500,
                                     }}
                                 >
-                                    Your Name
+                                    Joanna
                                 </strong>
-                                . I'm a software development student with a
+                                ! I'm a software development student with a
                                 passion for writing code and solving problems
                                 that don't exist yet.
                             </p>
@@ -115,7 +111,7 @@ function App() {
                     </FadeSection>
 
                     <FadeSection id="work">
-                        <div style={s.sectionLabel}>Selected Work</div>
+                        <div style={s.sectionLabel}>Projects</div>
                         <div>
                             {PROJECTS.map((p, i) => (
                                 <ProjectRow
@@ -131,17 +127,17 @@ function App() {
                         <div style={s.sectionLabel}>Contact</div>
                         <p style={s.contactSub}>
                             Open to internships, co-ops, and interesting
-                            conversations. Don't hesitate to reach out.
+                            conversations. Please don't hesitate to reach out!
                         </p>
                         <ContactEmail />
                         <div style={s.socialRow}>
                             <SocialLink
-                                href="#"
+                                href="https://github.com/j-albento"
                                 icon={<IconGitHub />}
                                 label="GitHub"
                             />
                             <SocialLink
-                                href="#"
+                                href="https://www.linkedin.com/in/joanna-albento/"
                                 icon={<IconLinkedIn />}
                                 label="LinkedIn"
                             />

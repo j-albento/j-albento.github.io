@@ -1,4 +1,6 @@
-function useFadeIn() {
+import { useRef, useState, useEffect } from "react";
+
+export default function useFadeIn() {
     const ref = useRef(null);
     const [visible, setVisible] = useState(false);
     useEffect(() => {
