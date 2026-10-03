@@ -19,7 +19,7 @@ export default function ContactEmail() {
                 transition: "border-color 0.25s ease",
             }}
         >
-            my email
+            Contact me!
         </a>
     );
 }

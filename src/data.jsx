@@ -24,7 +24,7 @@ export const PROJECTS = [
     },
     {
         num: "02",
-        title: "FeatFinders Mod",
+        title: "Achievement Hunters Mod",
         desc: "An intuitive UI-based achievement tracker for Stardew Valley.",
         tags: ["C#"],
         github: "#",
